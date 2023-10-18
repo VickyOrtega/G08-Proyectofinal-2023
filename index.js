@@ -30,7 +30,7 @@ app.listen(Listen_Port, function () {
     "Servidor NodeJS corriendo en http://localhost:" + Listen_Port + "/"
   );
 });
-
+//hola
 app.use(session({secret: '123456', resave: true, saveUninitialized: true}));
 
 // Configuración de Firebase
