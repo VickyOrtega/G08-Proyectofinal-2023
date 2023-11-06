@@ -301,7 +301,9 @@ input[type=text]:placeholder {
 }
 
 
-
+/*.center{
+  padding-top: 30px;
+}*/
 
 /*pagina log regist*/
 .h1edu{
@@ -316,7 +318,7 @@ input[type=text]:placeholder {
 }
 /*puntitos*/
 .bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -1073,7 +1075,10 @@ width: 20rem;
   font-size: 45px;
   font-family:'Alata', sans-serif;
 }
-
+.botondesea{
+  align-items: center;
+  margin-top: 30px;
+}
 body {
 font-family:'Alata', sans-serif;  ;
 height: 100vh;
@@ -1104,11 +1109,10 @@ padding: 20px;
 -webkit-border-radius: 10px 10px 10px 10px;
 border-radius: 10px 10px 10px 10px;
 background: #FF833C;
-padding: 30px;
 width: 90%;
 max-width: 550px;
-position: absolute;
-padding: 50px;
+position: fixed;
+padding: 30px;
 -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 text-align: center;
@@ -1422,7 +1426,7 @@ input[type=button], input[type=submit], input[type=reset]  {
   border: none;
   font-family:'Alata';
   color: #363835;
-  padding: 15px 50px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
