@@ -30,7 +30,7 @@ app.listen(Listen_Port, function () {
     "Servidor NodeJS corriendo en http://localhost:" + Listen_Port + "/"
   );
 });
-//hola
+
 app.use(session({secret: '123456', resave: true, saveUninitialized: true}));
 
 // Configuración de Firebase
@@ -55,18 +55,41 @@ app.get("/", (req, res) => {
 app.get("/register", (req, res) => {
   res.render("register");
 });
-
+app.post("/deseahacer", (req, res) => {
+  res.render("deseahacer");
+});
+app.get("/matrepaso", (req, res) => {
+  res.render("matrepaso");
+});
+app.get("/ingrepaso", (req, res) => {
+  res.render("ingrepaso");
+});
+app.get("/georepaso", (req, res) => {
+  res.render("georepaso");
+});
+app.get("/cienrepaso", (req, res) => {
+  res.render("cienrepaso");
+});
+app.post("/repaso", (req, res) => {
+  res.render("repaso");
+});
+app.get("/juega", (req, res) => {
+  res.render("juega");
+});
+app.get("/matjuego", (req, res) => {
+  res.render("matjuego");
+});
 app.post("/register", async (req, res) => {
   const { email, password } = req.body;
 
   try {
     await authService.registerUser(auth, { email, password });
-    res.render("register", {
+    res.render("login", {
       message: "Registro exitoso. Puedes iniciar sesión ahora.",
     });
   } catch (error) {
     console.error("Error en el registro:", error);
-    res.render("register", {
+    res.render("login", {
       message: "Error en el registro: " + error.message,
     });
   }
@@ -85,7 +108,7 @@ app.post("/login", async (req, res) => {
       password,
     });
     // Aquí puedes redirigir al usuario a la página que desees después del inicio de sesión exitoso
-    res.redirect("/paginaecheyvera");
+    res.redirect("/deseahacer");
   } catch (error) {
     console.error("Error en el inicio de sesión:", error);
     res.render("register", {
@@ -94,7 +117,9 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/paginaecheyvera", (req, res) => {
+app.get("/deseahacer", (req, res) => {
   // Agrega aquí la lógica para mostrar la página del dashboard
-  res.render("paginaecheyvera");
+  res.render("deseahacer");
 });
+
+

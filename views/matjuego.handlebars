@@ -1,9 +1,10 @@
-<form action="/login" method="POST" class="container-sm" id="form1"></form>
-    <div class="wrapper fadeInDown">
-  <div id="formlogin">
- <div class="center"›
-<!-- Puntitos-->
-<div class="bg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Lilita+One&family=Neuton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<body class="juegomat">
+    <div class="bg">
   <div class="dotWrapper dotWrapper-1">
     <div class="dot dot-1"></div>
   </div>
@@ -230,21 +231,38 @@
     <div class="dot dot-75"></div>
   </div>
 </div>
-</div>
-    <!-- Icono -->
-    <h1 class="h1edu">EducANDO</h1>
-    <div class="fadeIn first">
-     <center> <img src="/img/dibu.png" id="icon" alt="User Icon"/></center>
-    </div>
-   
-    <!-- Login Form -->
-    <form action="/register" method="POST">
-      <input type="text" id="usuarioId" class="fadeIn second " name="email" placeholder="Mail">
-      <input type="password" id="password" class="fadeIn second" name="password" placeholder="Contraseña">
-      <div id="DIV">
-        <input type="submit"  class="fadeIn fourth btn-xs" value="Registrese">
-        <input type="button" onclick="irALogin()" class="fadeIn five " value=" Ya tengo cuenta">
-    </div>
+    <div class="main-ui">
+    <p class="problem"></p>
+
+    <form action="" class="our-form">
+    <input type="text" class="our-field" autocomplete="off">
+    <button>Enviar</button>
     </form>
 
-    <h1>{{message}}</h1>
+    <p class="status">Tienes que completar <span class="points-needed">10</span> puntos más y te puedes equivocar <span class="mistakes-allowed">2</span> veces más.</p>
+
+    <div class="progress">
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="progress-inner"></div>
+    </div>
+
+    </div>
+
+    <div class="overlay">
+    <div class="overlay-inner">
+    <p class="end-message"></p>
+    <button class="reset-button">Start Over</button>
+    </div>
+    </div>
+    </body>

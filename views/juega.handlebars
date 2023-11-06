@@ -1,8 +1,13 @@
-<form action="/login" method="POST" class="container-sm" id="form1"></form>
-    <div class="wrapper fadeInDown">
-  <div id="formlogin">
- <div class="center"›
-<!-- Puntitos-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+
+<section class="game-section">
+  <h2 class="titulin">
+      <span style="color: #FF9255;">EDUC</span>
+      <span style="color: #7894FF;">ANDO</span>       
+    </h2>
 <div class="bg">
   <div class="dotWrapper dotWrapper-1">
     <div class="dot dot-1"></div>
@@ -230,21 +235,33 @@
     <div class="dot dot-75"></div>
   </div>
 </div>
-</div>
-    <!-- Icono -->
-    <h1 class="h1edu">EducANDO</h1>
-    <div class="fadeIn first">
-     <center> <img src="/img/dibu.png" id="icon" alt="User Icon"/></center>
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(https://img.freepik.com/vector-gratis/nino-contando-numeros-escritorio_1308-30971.jpg);">
+      <div class="item-desc">
+        <form action="/matjuego" method="GET">
+          <input type="submit" class="jumat" value="MATEMÁTICA">
+          <p>En este espacio, los niños aprenderán a través del juego conceptos matemáticos como sumas y restas.</p>
+        </form>
+      </div>
     </div>
-   
-    <!-- Login Form -->
-    <form action="/register" method="POST">
-      <input type="text" id="usuarioId" class="fadeIn second " name="email" placeholder="Mail">
-      <input type="password" id="password" class="fadeIn second" name="password" placeholder="Contraseña">
-      <div id="DIV">
-        <input type="submit"  class="fadeIn fourth btn-xs" value="Registrese">
-        <input type="button" onclick="irALogin()" class="fadeIn five " value=" Ya tengo cuenta">
+    <div class="item" style="background-image: url(https://cursosdeinglesengandia.es/wp-content/uploads/2018/04/istockphoto-1166112913-170667a.jpg);">
+      <div class="item-desc">
+        <h3 class="juing">INGLÉS</h3>
+        <p>A través de nuestros juegos para aprender inglés, los niños fortalecerán el aprendizaje del verb to be.</p>
+      </div>
     </div>
-    </form>
-
-    <h1>{{message}}</h1>
+    <div class="item" style="background-image: url(https://static.vecteezy.com/system/resources/previews/002/831/724/non_2x/little-school-children-studying-geography-vector.jpg);">
+      <div class="item-desc">
+        <h3 class="jugeo">GEOGRAFÍA</h3>
+        <p>En nuestra sección de juegos educativos de Geografía encontradas una gran variedad de divertidos juegos que servirán para que afiancen conceptos sobre geografía.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://static.vecteezy.com/system/resources/previews/007/375/142/non_2x/scientist-cartoon-character-with-science-lab-objects-free-vector.jpg);">
+      <div class="item-desc">
+        <h3 class="jucien">CIENCIA</h3>
+        <p>En esta sección los niños aprenderán sobre la clasificación de los animales según sus características alimenticias.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

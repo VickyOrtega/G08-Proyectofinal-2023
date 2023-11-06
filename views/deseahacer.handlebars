@@ -1,8 +1,7 @@
-<form action="/login" method="POST" class="container-sm" id="form1"></form>
-    <div class="wrapper fadeInDown">
-  <div id="formlogin">
- <div class="center"›
-<!-- Puntitos-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Lilita+One&family=Neuton&display=swap" rel="stylesheet">
+<center><img class="azul" src="/img/bichitos.jpg"  style="width:850px; height:250px; margin-bottom:-1300px " ></center>
 <div class="bg">
   <div class="dotWrapper dotWrapper-1">
     <div class="dot dot-1"></div>
@@ -17,7 +16,7 @@
     <div class="dot dot-4"></div>
   </div>
   <div class="dotWrapper dotWrapper-5">
-    <div class="dot dot-5"></div>
+    <div class="dot dot-5"></div> 
   </div>
   <div class="dotWrapper dotWrapper-6">
     <div class="dot dot-6"></div>
@@ -229,22 +228,11 @@
   <div class="dotWrapper dotWrapper-75">
     <div class="dot dot-75"></div>
   </div>
-</div>
-</div>
+</div>       
+<div id="formdeseahacer">
+ <div class="center"›
     <!-- Icono -->
-    <h1 class="h1edu">EducANDO</h1>
-    <div class="fadeIn first">
-     <center> <img src="/img/dibu.png" id="icon" alt="User Icon"/></center>
+    <h1 class="titlerank">¿QUÉ DESEAS HACER?</h1>
+        <input type="submit" class="fadeIn fourth btn-xs" onclick='window.location.replace("/juega")'value="JUEGA">
+        <input type="submit" class="fadeIn five " onclick='window.location.replace("/repaso")' value="REPASA">
     </div>
-   
-    <!-- Login Form -->
-    <form action="/register" method="POST">
-      <input type="text" id="usuarioId" class="fadeIn second " name="email" placeholder="Mail">
-      <input type="password" id="password" class="fadeIn second" name="password" placeholder="Contraseña">
-      <div id="DIV">
-        <input type="submit"  class="fadeIn fourth btn-xs" value="Registrese">
-        <input type="button" onclick="irALogin()" class="fadeIn five " value=" Ya tengo cuenta">
-    </div>
-    </form>
-
-    <h1>{{message}}</h1>

@@ -10,7 +10,7 @@ display:flex;
   margin: 13px;
  }
  
-H1  {
+H1  { 
     color:white;
     font-size: 95px;
     font-family: 'Bebas Neue';
@@ -54,7 +54,7 @@ h2 {
   padding: 20px;
 }
 
-#formContent {
+#formlogin {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   background: #ED9837 ;
@@ -1047,7 +1047,7 @@ width: 20rem;
        margin-right: 10px;
       }
 
-#formContent2 {
+#formregister{
         -webkit-border-radius: 10px 10px 10px 10px;
         border-radius: 10px 10px 10px 10px;
         background: #8ae8f2;
@@ -1063,4 +1063,1145 @@ width: 20rem;
 
 #paginagracias{
  background-image: /img/Green Modern;
+}
+
+
+/* QUE DESEA HACER*/
+
+.titlerank{
+  color:white;
+  font-size: 45px;
+  font-family:'Alata', sans-serif;
+}
+
+body {
+font-family:'Alata', sans-serif;  ;
+height: 100vh;
+overflow: hidden;
+}
+
+a {
+color:black ;
+display:inline-block;
+text-decoration: none;
+font-weight: 400;
+}
+
+/* ESTRUCTURA */
+
+.wrapper {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+min-height: 100%;
+padding: 20px;
+
+}
+
+#formdeseahacer{
+-webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+background: #FF833C;
+padding: 30px;
+width: 90%;
+max-width: 550px;
+position: absolute;
+padding: 50px;
+-webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+text-align: center;
+margin-left: 32%;
+margin-top: 250px;
+}
+
+#formFooter {
+background-color: #f6f6f6;
+border-top: 1px solid #dce8f1;
+padding: 25px;
+text-align: center;
+-webkit-border-radius: 0 0 10px 10px;
+border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+color:white;
+}
+
+h2.active {
+color: white;
+border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+background-color: white;
+border: none;
+font-family:'Alata';
+color: #363835;
+padding: 15px 50px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+text-transform: uppercase;
+font-size: 20px;
+-webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+-webkit-border-radius: 5px 5px 5px 5px;
+border-radius: 5px 5px 5px 5px;
+margin: 5px 20px 40px 20px;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+-moz-transform: scale(0.95);
+-webkit-transform: scale(0.95);
+-o-transform: scale(0.95);
+-ms-transform: scale(0.95);
+transform: scale(0.95);
+}
+
+input[type=text] {
+background-color: white;
+border: none;
+color: rgb(0, 0, 0);
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 5px;
+width: 85%;
+border: 2px solid #f6f6f6;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+-webkit-border-radius: 5px 5px 5px 5px;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+-webkit-animation-name: fadeInDown;
+animation-name: fadeInDown;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+}
+
+@keyframes fadeInDown {
+0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+opacity:0;
+-webkit-animation:fadeIn ease-in 1;
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1;
+
+-webkit-animation-fill-mode:forwards;
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+
+-webkit-animation-duration:1s;
+-moz-animation-duration:1s;
+animation-duration:1s;
+}
+
+.fadeIn.first {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay: 0.4s;
+animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+-webkit-animation-delay: 0.6s;
+-moz-animation-delay: 0.6s;
+animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+-webkit-animation-delay: 0.8s;
+-moz-animation-delay: 0.8s;
+animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+.fadeIn.five
+{
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+display: block;
+left: 0;
+bottom: -10px;
+width: 0;
+height: 2px;
+background-color: #56baed;
+content: "";
+transition: width 0.2s;
+}
+
+.underlineHover:hover {
+color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+  outline: none;
+}
+
+#icon {
+width:60%;
+}
+
+* {
+box-sizing: border-box;
+}
+button:hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  }
+  
+  #azul{
+     width:100px;
+     height:100px;
+  }
+  
+  /* PAG REPASO*/
+  .EDUCANDO{
+    color:#FF9255;
+    font-size: 80px;
+    font-family:'Alata', sans-serif;
+ }
+.titrepaso{
+    color:black;
+    font-size: 30px;
+    font-family:'Alata', sans-serif;
+ }
+
+body {
+  font-family:'Alata', sans-serif;  ;
+  height: 100vh;
+}
+
+a {
+  color:black ;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* ESTRUCTURA */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+
+}
+
+#contenido {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #FFFFFF;
+  padding: 30px;
+  width: 90%;
+  width: 800px;
+  position: absolute;
+  padding: 50px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #FFFFFF;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+}
+h2..inactive {
+  color:white;
+}
+
+h2.active {
+  color: white;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: white;
+  border: none;
+  font-family:'Alata';
+  color: #363835;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #FFFFFF;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: white;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background:white;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  text-align: center;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  text-align: center;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  text-align: center;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+  background: white;
+  text-align: center;
+}
+
+}
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #FFFFFF;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+}
+
+#icon {
+  width:60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+ 
+
+button:hover {
+animation-name: gradient;
+-webkit-animation-name: gradient;
+animation-duration: 2s;
+-webkit-animation-duration: 2s;
+animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+animation-fill-mode: forwards;
+-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+100% {
+    background-position: 100% 50%;
+}
+}
+
+/* REPASO MATEMATICA*/
+
+.titmat{
+  text-align:center;
+  color:black;
+  font-size:55px;
+  transition:0.5s;
+  font-family:'Alata', sans-serif;
+}
+.fracciones{
+  font-family: 'Urbanist', sans-serif;
+  font-size:45px;
+  color:black;
+}
+
+#fotofrac{
+  text-align:left;
+  display:flex;
+  justify-content: space-between;
+}
+
+#contmat{
+  max-width:1000px;
+  margin:auto;
+  color:black;
+  padding:40px;
+  text-align:left;
+  background:#FC9090;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  
+}
+  
+.titmat:hover{
+  color:#FC9090;
+  font-size:65px;
+}
+a{
+  color:#FC9132;
+  display:block;
+  margin:auto;
+}
+
+.textofrac{
+  display: flex;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+/* REPASO INGLÉS*/
+.titingles{
+  text-align:center;
+  color: black;
+  font-size:55px;
+  transition:0.5s;
+  font-family:'Alata', sans-serif;
+}
+.colors{
+  font-family: 'Urbanist', sans-serif;
+  font-size:45px;
+  color:black;
+}
+
+#fotocol{
+  text-align:left;
+  display:flex;
+  justify-content: space-between;
+}
+
+#contingles{
+  max-width:1000px;
+  margin:auto;
+  color:black;
+  padding:40px;
+  text-align:left;
+  background:#FFBDDC;
+  -webkit-border-radius: 10px 10px 10px 10px;
+   border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  
+}
+.titingles:hover{
+  color:#FFBDDC;
+  font-size:65px;
+}
+a{
+  color:#FC9132;
+  display:block;
+  margin:auto;
+}
+
+.textcol{
+  display: flex;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+
+/* REPASO GEOGRAFÍA*/
+.titgeo{
+  text-align:center;
+  color:black;
+  font-size:55px;
+  transition:0.5s;
+  font-family:'Alata', sans-serif;
+}
+.banderas{
+  font-family: 'Urbanist', sans-serif;
+  font-size:45px;
+  color:black;
+}
+
+#bandimg{
+  text-align:left;
+  display:flex;
+  justify-content: space-between;
+}
+
+#contgeo{
+  max-width:1000px;
+  margin:auto;
+  color:black;
+  padding:40px;
+  text-align:left;
+  background:#FFEE83;
+  -webkit-border-radius: 10px 10px 10px 10px;
+   border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  
+}
+   
+.titgeo:hover{
+  color:#FFEE83;
+  font-size:65px;
+}
+a{
+  color:#FC9132;
+  display:block;
+  margin:auto;
+}
+
+.textband{
+  display: flex;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+
+/* REPASO CIENCIA*/
+.titcien{
+  text-align:center;
+  color:black;
+  font-size:55px;
+  transition:0.5s;
+  font-family:'Alata', sans-serif;
+}
+.animales{
+  font-family: 'Urbanist', sans-serif;
+  font-size:45px;
+  color:black;
+}
+
+#cienimg{
+  text-align:left;
+  display:flex;
+}
+
+#contcien{
+  max-width:1000px;
+  margin:auto;
+  color:black;
+  padding:40px;
+  text-align:left;
+  background:#BEBDFF;
+  -webkit-border-radius: 10px 10px 10px 10px;
+   border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  
+}
+   
+a{
+  color:white;
+}
+body{
+  background:#FFFFFF;
+  font-family:'Alata', sans-serif;
+}
+.titcien:hover{
+  color:#BEBDFF;
+  font-size:65px;
+}
+a{
+  color:#FC9132;
+  display:block;
+  margin:auto;
+}
+
+.textocien{
+  display: flex;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+@charset "utf-8";
+
+/******* Common Element CSS Start ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clear {
+  clear: both;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #e73700;
+}
+.line-title{
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+.jumat .juing .jugeo .jucien{
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+  position: relative;
+  width: 400px;
+  font-size: 60px;
+}  
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
+  padding: 60px 50px;
+}
+.game-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .line-title{
+    margin-bottom: 32px;
+  }
+.jumat .juing .jugeo .jucien{
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .game-section .item.active {
+    width: 400px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.line-title{
+    margin-bottom: 32px;
+  }
+.jumat .juing .jugeo .jucien{
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+.line-title{
+    margin-bottom: 20px;
+  }
+.jumat .juing .jugeo .jucien{
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+.titulin{
+  font-size: 150px;
+  font-family: 'Bebas Neue' ;
+}
+  /*JUEGO MAT*/
+.juegomat{
+  font-family:'Alata', sans-serif;
+  margin: 0;
+  color: black;
+  background: #FECACA;
+}
+.main-ui {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.our-form {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  text-align: center;
+  font-size: .85rem;
+}
+
+.boxes {
+  display: flex;
+  width: 100%;
+}
+
+.progress {
+  border: 1px solid #c7c7c7;
+  border-right: none;
+  position: relative;
+}
+
+.progress-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7ecc00;
+  opacity: .57;
+  transform: scaleX(0);
+  transform-origin: center left;
+  transition: transform .4s ease-out;
+}
+
+.box {
+  height: 40px;
+  border-right: 1px solid #c7c7c7;
+  flex: 1;
+    border-style: solid;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .33s ease-out;
+  transform: scale(1.2);
+}
+
+.overlay-inner {
+  text-align: center;
+  max-width: 700px;
+}
+
+.juegomat.overlay-is-open .overlay,
+.overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.juegomat.overlay-is-open .main-ui,
+.blurred {
+  filter: blur(4px);
+}
+
+@keyframes showError {
+  50% {
+    color: red;
+    transform: scale(1.2);
+  }
+
+  100% {
+    color: #333;
+    transform: scale(1);
+  }
+}
+
+.animate-wrong {
+  animation: .45s showError;
+}
+
+.problem {
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.end-message {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.reset-button {
+  font-size: 1.2rem;
+  background-color: #004094;
+  border: none;
+  color: #FFF;
+  border-radius: 7px;
+  padding: 12px 20px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #00367e;
+}
+
+.reset-button:focus {
+  background-color: #00275a;
 }
