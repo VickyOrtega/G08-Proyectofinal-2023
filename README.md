@@ -9,9 +9,9 @@ Entregas realizadas:
 Echenique ✔️
 6. Diseño de la idea base en CSS. (10/10) Kunca- Echenique ✔️
 7. Creación login/registro (10/10) Echenique✔️
-8. Creación de cada página con el uso de CSS. (20/10) Ortega-Rovera
+8. Creación de cada página con el uso de CSS. (20/10) Ortega-Rovera ✔️
 9. Relación de base de datos con las preguntas y respuesta correcta de cada
-materia(23/10) Ortega-Rovera
+materia(23/10) Ortega-Rovera✔️
 10. Uso de página admin(10/11) Ortega
 11. Funciones de interacción con la base (API)(15/11) Rovera
 12. Testeo (17/11)
