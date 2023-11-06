@@ -82,6 +82,14 @@ app.get("/matjuego", (req, res) => {
 app.get("/ingjuego", (req, res) => {
   res.render("ingjuego");
 });
+app.get("/deseahacer", (req, res) => {
+  // Agrega aquí la lógica para mostrar la página del dashboard
+  res.render("deseahacer");
+});
+app.get("/editar", (req, res) => {
+  // Agrega aquí la lógica para mostrar la página del dashboard
+  res.render("editar");
+});
 app.post("/register", async (req, res) => {
   const { email, password } = req.body;
 
@@ -120,9 +128,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/deseahacer", (req, res) => {
-  // Agrega aquí la lógica para mostrar la página del dashboard
-  res.render("deseahacer");
-});
+
 
 
