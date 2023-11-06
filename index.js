@@ -79,6 +79,9 @@ app.get("/juega", (req, res) => {
 app.get("/matjuego", (req, res) => {
   res.render("matjuego");
 });
+app.get("/ingjuego", (req, res) => {
+  res.render("ingjuego");
+});
 app.post("/register", async (req, res) => {
   const { email, password } = req.body;
 
