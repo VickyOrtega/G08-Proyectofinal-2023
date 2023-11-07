@@ -2087,7 +2087,7 @@ button {
 .main-ui {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .our-form {
@@ -2263,4 +2263,31 @@ button {
 .english{
   margin-top: -120px;
   float:left;
+}
+
+/*mat juego*/
+
+.botoncin {
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: pink;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-top: 10px;
+  outline: none;
+  }
+
+.botoncin:hover {
+  background-color: #cc0099;
+  box-shadow: 0px 15px 20px rgba(229, 46, 183, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
