@@ -59,7 +59,7 @@ function irALogin() {
   location.href = '/register'
 }
 
-/*jueg*/ 
+/*jueg matematica*/ 
 const problemElement = document.querySelector(".problem")
 const ourForm = document.querySelector(".our-form")
 const ourField = document.querySelector(".our-field")
@@ -119,20 +119,46 @@ function handleSubmit(e) {
   }
   checkLogic()
 }
+/*chequea que el resultado sea siempre positivo*/
+
+
+function generateProblem() {
+  let numberOne, numberTwo, operator, correctAnswer;
+
+  do {
+    numberOne = generateNumber(10);
+    numberTwo = generateNumber(10);
+    operator = ['+', '-', 'x'][generateNumber(2)];
+
+    if (operator === '+') {
+      correctAnswer = numberOne + numberTwo;
+    } else if (operator === '-') {
+      correctAnswer = numberOne - numberTwo;
+    } else if (operator === 'x') {
+      correctAnswer = numberOne * numberTwo;
+    }
+  } while (correctAnswer < 0);
+
+  return {
+    numberOne,
+    numberTwo,
+    operator
+  };
+}
 
 function checkLogic() {
-  // if you won
   if (state.score === 10) {
-    endMessage.textContent = "¡HAS GANADO!"
-    document.body.classList.add("overlay-is-open")
-    setTimeout(() => resetButton.focus(), 331)
+    endMessage.textContent = "¡HAS GANADO! Se nota que has estado practicando";
+    document.body.classList.add("overlay-is-open");
+    document.getElementById("final-score").textContent = `Puntaje final: ${state.score}`;
+    setTimeout(() => resetButton.focus(), 331);
   }
 
-  // if you lost
   if (state.wrongAnswers === 3) {
-    endMessage.textContent = "LO SIENTO! HAS PERDIDO :("
-    document.body.classList.add("overlay-is-open")
-    setTimeout(() => resetButton.focus(), 331)
+    endMessage.textContent = "Has perdido, repasa e intentalo de nuevo";
+    document.body.classList.add("overlay-is-open");
+    document.getElementById("final-score").textContent = `Tu puntaje final es de : ${state.score}`;
+    setTimeout(() => resetButton.focus(), 331);
   }
 }
 
@@ -151,6 +177,8 @@ function resetGame() {
 function renderProgressBar() {
   progressBar.style.transform = `scaleX(${state.score / 10})`
 }
+
+
 
 /*jueging*/ 
 let currentQuestion = document.querySelector('.question');
