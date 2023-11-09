@@ -2308,3 +2308,55 @@ button {
 .final-score{
   padding-top: 10px;
 }
+.owl-next {
+  background-color: #7894FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, width 0.3s; /* Añadida transición para la anchura */
+  width: 150px; /* Anchura inicial de los botones */
+}
+
+.owl-next:hover {
+  background-color: #7894FF;
+  width: 200px; /* Anchura al pasar el ratón sobre el botón */
+}
+
+/* Opcional: Agregar animación extra */
+.owl-next:active {
+  transform: scale(0.95);
+}
+
+
+.owl-prev {
+  background-color: #7894FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, width 0.3s; /* Añadida transición para la anchura */
+  width: 150px; /* Anchura inicial de los botones */
+}
+
+.owl-prev:hover {
+  background-color: #7894FF;
+  width: 200px; /* Anchura al pasar el ratón sobre el botón */
+}
+
+/* Opcional: Agregar animación extra */
+.owl-prev:active {
+  transform: scale(0.95);
+}
