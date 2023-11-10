@@ -51,7 +51,9 @@ const authService = require("./authService");
 app.get("/", (req, res) => {
   res.render("home (2)");
 });
-
+app.get("/admin", (req, res) => {
+  res.render("admin");
+});
 app.get("/register", (req, res) => {
   res.render("register");
 });
@@ -95,6 +97,9 @@ app.post("/register", async (req, res) => {
 
   try {
     await authService.registerUser(auth, { email, password });
+    await MySQL.realizarQuery(`INSERT INTO Usernamepf(nombre) VALUES (email)`)
+
+
     res.render("login", {
       message: "Registro exitoso. Puedes iniciar sesión ahora.",
     });
@@ -119,7 +124,12 @@ app.post("/login", async (req, res) => {
       password,
     });
     // Aquí puedes redirigir al usuario a la página que desees después del inicio de sesión exitoso
-    res.redirect("/deseahacer");
+    if (email == "mvortega@pioix.edu.ar"){
+      res.redirect("/admin")
+    }
+    else{
+      res.redirect("/deseahacer");
+    }
   } catch (error) {
     console.error("Error en el inicio de sesión:", error);
     res.render("register", {
