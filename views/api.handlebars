@@ -1,18 +1,10 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/8b2f85c4c1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 
-
-<section class="game-section">
-  <form action="/api" method="GET">
-          <input type="submit" class="apibutton" value="Ver condiciones climáticas">
-        </form>
-  
-  <h2 class="titulin">
-      <span style="color: #FF9255;">EDUC</span>
-      <span style="color: #7894FF;">ANDO</span>       
-    </h2>
-<div class="bg">
+<div class="container">
+   <!-- Puntitos-->
+<div class="bgapi">
   <div class="dotWrapper dotWrapper-1">
     <div class="dot dot-1"></div>
   </div>
@@ -238,36 +230,158 @@
   <div class="dotWrapper dotWrapper-75">
     <div class="dot dot-75"></div>
   </div>
-</div>
-  <div class="owl-carousel custom-carousel owl-theme">
-    <div class="item active" style="background-image: url(https://img.freepik.com/vector-gratis/nino-contando-numeros-escritorio_1308-30971.jpg);">
-      <div class="item-desc">
-        <form action="/matjuego" method="GET">
-          <input type="submit" class="jumat" value="MATEMÁTICA">
-          <p>En este espacio, los niños aprenderán a través del juego conceptos matemáticos como sumas y restas.</p>
-        </form>
+</div> 
+ <!--ICONS SECTION   -->
+  <div id="clouds" class="icon visible">
+    <div class="sun pulse"></div>
+    <div class="cloud"></div>
+    <div class="cloud move"></div>
+  </div>
+  
+  <div id="justClouds" class="icon">
+    <div class="cloud move"></div>
+    <div class="cloud"></div>
+  </div>
+  
+<!--TRIAL -->  
+ <div id="run" class="icon"></div>
+ <div id="sunny" class="icon">
+    <div class="sun spin pulse center">
+     <div class="rays"></div>
+    <div class="rays"></div>
+    </div>   
+  </div >
+ 
+  
+  <div id="rain" class="icon">
+    <div class="cloud move">
+      <div class="rain">
+        <div></div><div></div>
+        <div></div><div></div>
+        <div></div><div></div>
+        <div></div><div></div>
       </div>
     </div>
-    <div class="item" style="background-image: url(https://cursosdeinglesengandia.es/wp-content/uploads/2018/04/istockphoto-1166112913-170667a.jpg);">
-      <div class="item-desc">
-        <form action="/ingjuego" method="GET">
-          <input type="submit" class="juing" value="INGLÉS">
-          <p>A través de nuestros juegos para aprender inglés, los niños fortalecerán el aprendizaje del verb to be.</p>
-        </form>
+   <div class="cloud">
+     <div class="rain">
+        <div></div><div></div>
+        <div></div><div></div>
+        <div></div><div></div>
+        <div></div><div></div>
       </div>
-    </div>
-    <div class="item" style="background-image: url(https://static.vecteezy.com/system/resources/previews/002/831/724/non_2x/little-school-children-studying-geography-vector.jpg);">
-      <div class="item-desc">
-        <h3 class="jugeo">GEOGRAFÍA</h3>
-        <p>En nuestra sección de juegos educativos de Geografía encontradas una gran variedad de divertidos juegos que servirán para que afiancen conceptos sobre geografía.</p>
+    </div>   
+  </div>
+  
+  <div id ="storm" class="icon">
+    <div class="cloud storm">
+      <div class="rain">
+        <div></div><div></div>
+        <div></div><div></div>
+        <div></div><div></div>
+        <div></div><div></div>
       </div>
-    </div>
-    <div class="item" style="background-image: url(https://static.vecteezy.com/system/resources/previews/007/375/142/non_2x/scientist-cartoon-character-with-science-lab-objects-free-vector.jpg);">
-      <div class="item-desc">
-        <h3 class="jucien">CIENCIA</h3>
-        <p>En esta sección los niños aprenderán sobre la clasificación de los animales según sus características alimenticias.</p>
-      </div>
+    <div class="thunder"><div>
     </div>
   </div>
+    </div>
   </div>
-</section>
+  
+  <div id="snow" class="icon">
+    <div class="cloud move">
+      <div class="snow"></div>
+    </div>
+    <div class="cloud ">
+      <div class="snow"></div>
+    </div>
+  </div>
+   
+  
+  
+<!--ICONS END -->
+
+<!--WEATHER DESCRIPTION -->
+  <h2 id="weather-description"></h2>
+  <div class="sexy_line"></div> 
+  
+<!--HEADER --> 
+  <div class="header">
+    <h2>
+      <i id="location" class="fa fa-map-marker" aria-hidden="true"></i>
+      <input id="city" type="text" type="submit" placeholder="Buscar ciudad">
+      <!-- <span id="city">Gdynia</span> -->
+      </input>
+      <i id="settings" class="fa fa-cog" aria-hidden="true"></i></h2></div>
+  
+ <!--WEATHER DATA -->  
+  <div class="main-container">
+    <div class="temperature">
+      <h1 id="h1api">
+        <button ><span id="temp"></span><sup><span class="sign"></span></sup></button>     
+        <!--<sup><span id="sign">&deg;C</span></sup>-->
+      </>
+     
+    </div>
+    <div class="detail-container">
+      <div class="humidity">
+        <h3><i class="fa fa-tint " aria-hidden="true"></i><span id="humidity"></span><span class="sign">%</span></h3>
+      </div>
+      <div class="wind-speed">
+       <h3><!--<i class="fa fa-flag" aria-hidden="true"></i>--><img src="https://github.com/r00bal/Demo/blob/master/wind_direction_indicator.png?raw=true" alt="wind indicator" width="" height="35"><button><span id="windspeed"></span><span class="sign"></span></button></h3>
+      </div>
+    </div>  
+  
+  </div><!--END OF MAIN CONTAINER --> 
+
+<!--MENU-->
+<div class="settings">
+  <h4>Buscar ciudad por:</h4>  
+    <div class="options">
+      <h5>Nombre</h5>
+      <h5>Código postal</h5>
+    </div>       
+      <form> 
+        <label>
+          <input type="radio" name="city" id="name" value="name"><span class="label-text" ></span>
+        </label>
+        <label> 
+          <input type="radio" name="city" id="zip-code" value="zip"><span class="label-text" ></span>
+        </label>    
+      </form>  
+  
+  <h4>Unidad de temperatura:</h4>  
+    <div class="options">
+      <h5>celsius&deg;C</h5>
+      <h5>fahrenheit&deg;F</h5>
+    </div>       
+      <form> 
+        <label>
+          <input type="radio" name="temp" id="c" value="c"><span class="label-text" </span>
+        </label>
+        <label> 
+          <input type="radio" name="temp" id="f" value="f"><span class="label-text" ></span>
+        </label>    
+      </form>  
+  
+  <h4>Unidad de viento:</h4>  
+    <div class="options">
+      <h5>km/h</h5>
+      <h5>m/s</h5>
+      <h5>knots</h5>
+    </div>       
+      <form> 
+        <label>
+          <input type="radio" name="wind" value="kmh" id="kmh"><span class="label-text" ></span>
+        </label>
+        <label> 
+          <input type="radio" name="wind" value="ms" id="ms"><span class="label-text" ></span>
+        </label>
+        <label> 
+          <input type="radio" name="wind" value="knots" id="knots"><span class="label-text" ></span>
+        </label>    
+      </form>  
+  
+  
+</div><!-- END OF MENU-->
+
+ 
+</div><!--END OF CANTAINER -->  

@@ -84,6 +84,9 @@ app.get("/matjuego", (req, res) => {
 app.get("/ingjuego", (req, res) => {
   res.render("ingjuego");
 });
+app.get("/api", (req, res) => {
+  res.render("api");
+});
 app.get("/deseahacer", (req, res) => {
   // Agrega aquí la lógica para mostrar la página del dashboard
   res.render("deseahacer");
